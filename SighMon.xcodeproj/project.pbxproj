@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0DD5B9625EC6AC3004E001C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5B9525EC6AC3004E001C /* AppDelegate.swift */; };
+		A0DD5B9825EC6AC3004E001C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5B9725EC6AC3004E001C /* SceneDelegate.swift */; };
+		A0DD5B9A25EC6AC3004E001C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5B9925EC6AC3004E001C /* ViewController.swift */; };
+		A0DD5B9D25EC6AC3004E001C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5B9B25EC6AC3004E001C /* Main.storyboard */; };
+		A0DD5B9F25EC6AC5004E001C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5B9E25EC6AC5004E001C /* Assets.xcassets */; };
+		A0DD5BA225EC6AC5004E001C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5BA025EC6AC5004E001C /* LaunchScreen.storyboard */; };
+		A0DD5BAD25EC6AC5004E001C /* SighMonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BAC25EC6AC5004E001C /* SighMonTests.swift */; };
+		A0DD5BB825EC6AC5004E001C /* SighMonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BB725EC6AC5004E001C /* SighMonUITests.swift */; };
+		A0DD5BBD25EC6AC5004E001C /* SighMon WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A0DD5BBC25EC6AC5004E001C /* SighMon WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A0DD5BC325EC6AC5004E001C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5BC125EC6AC5004E001C /* Interface.storyboard */; };
+		A0DD5BC525EC6AC6004E001C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5BC425EC6AC6004E001C /* Assets.xcassets */; };
+		A0DD5BCC25EC6AC6004E001C /* SighMon WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A0DD5BCB25EC6AC6004E001C /* SighMon WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A0DD5BD125EC6AC6004E001C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BD025EC6AC6004E001C /* InterfaceController.swift */; };
+		A0DD5BD325EC6AC6004E001C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BD225EC6AC6004E001C /* ExtensionDelegate.swift */; };
+		A0DD5BD525EC6AC6004E001C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BD425EC6AC6004E001C /* NotificationController.swift */; };
+		A0DD5BD725EC6AC6004E001C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD5BD625EC6AC6004E001C /* ComplicationController.swift */; };
+		A0DD5BD925EC6AC7004E001C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DD5BD825EC6AC7004E001C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0DD5BA925EC6AC5004E001C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD5B8A25EC6AC3004E001C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD5B9125EC6AC3004E001C;
+			remoteInfo = SighMon;
+		};
+		A0DD5BB425EC6AC5004E001C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD5B8A25EC6AC3004E001C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD5B9125EC6AC3004E001C;
+			remoteInfo = SighMon;
+		};
+		A0DD5BBE25EC6AC5004E001C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD5B8A25EC6AC3004E001C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD5BBB25EC6AC5004E001C;
+			remoteInfo = "SighMon WatchKit App";
+		};
+		A0DD5BCD25EC6AC6004E001C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD5B8A25EC6AC3004E001C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD5BCA25EC6AC6004E001C;
+			remoteInfo = "SighMon WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0DD5BE125EC6AC7004E001C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A0DD5BCC25EC6AC6004E001C /* SighMon WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BE525EC6AC7004E001C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A0DD5BBD25EC6AC5004E001C /* SighMon WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A0DD5B9225EC6AC3004E001C /* SighMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SighMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD5B9525EC6AC3004E001C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0DD5B9725EC6AC3004E001C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0DD5B9925EC6AC3004E001C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0DD5B9C25EC6AC3004E001C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0DD5B9E25EC6AC5004E001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0DD5BA125EC6AC5004E001C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0DD5BA325EC6AC5004E001C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DD5BA825EC6AC5004E001C /* SighMonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SighMonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD5BAC25EC6AC5004E001C /* SighMonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighMonTests.swift; sourceTree = "<group>"; };
+		A0DD5BAE25EC6AC5004E001C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DD5BB325EC6AC5004E001C /* SighMonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SighMonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD5BB725EC6AC5004E001C /* SighMonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighMonUITests.swift; sourceTree = "<group>"; };
+		A0DD5BB925EC6AC5004E001C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DD5BBC25EC6AC5004E001C /* SighMon WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SighMon WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD5BC225EC6AC5004E001C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A0DD5BC425EC6AC6004E001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0DD5BC625EC6AC6004E001C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DD5BCB25EC6AC6004E001C /* SighMon WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SighMon WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD5BD025EC6AC6004E001C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A0DD5BD225EC6AC6004E001C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A0DD5BD425EC6AC6004E001C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A0DD5BD625EC6AC6004E001C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A0DD5BD825EC6AC7004E001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0DD5BDA25EC6AC7004E001C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DD5BDB25EC6AC7004E001C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0DD5B8F25EC6AC3004E001C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BA525EC6AC5004E001C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BB025EC6AC5004E001C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BC825EC6AC6004E001C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0DD5B8925EC6AC3004E001C = {
+			isa = PBXGroup;
+			children = (
+				A0DD5B9425EC6AC3004E001C /* SighMon */,
+				A0DD5BAB25EC6AC5004E001C /* SighMonTests */,
+				A0DD5BB625EC6AC5004E001C /* SighMonUITests */,
+				A0DD5BC025EC6AC5004E001C /* SighMon WatchKit App */,
+				A0DD5BCF25EC6AC6004E001C /* SighMon WatchKit Extension */,
+				A0DD5B9325EC6AC3004E001C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0DD5B9325EC6AC3004E001C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5B9225EC6AC3004E001C /* SighMon.app */,
+				A0DD5BA825EC6AC5004E001C /* SighMonTests.xctest */,
+				A0DD5BB325EC6AC5004E001C /* SighMonUITests.xctest */,
+				A0DD5BBC25EC6AC5004E001C /* SighMon WatchKit App.app */,
+				A0DD5BCB25EC6AC6004E001C /* SighMon WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DD5B9425EC6AC3004E001C /* SighMon */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5B9525EC6AC3004E001C /* AppDelegate.swift */,
+				A0DD5B9725EC6AC3004E001C /* SceneDelegate.swift */,
+				A0DD5B9925EC6AC3004E001C /* ViewController.swift */,
+				A0DD5B9B25EC6AC3004E001C /* Main.storyboard */,
+				A0DD5B9E25EC6AC5004E001C /* Assets.xcassets */,
+				A0DD5BA025EC6AC5004E001C /* LaunchScreen.storyboard */,
+				A0DD5BA325EC6AC5004E001C /* Info.plist */,
+			);
+			path = SighMon;
+			sourceTree = "<group>";
+		};
+		A0DD5BAB25EC6AC5004E001C /* SighMonTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5BAC25EC6AC5004E001C /* SighMonTests.swift */,
+				A0DD5BAE25EC6AC5004E001C /* Info.plist */,
+			);
+			path = SighMonTests;
+			sourceTree = "<group>";
+		};
+		A0DD5BB625EC6AC5004E001C /* SighMonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5BB725EC6AC5004E001C /* SighMonUITests.swift */,
+				A0DD5BB925EC6AC5004E001C /* Info.plist */,
+			);
+			path = SighMonUITests;
+			sourceTree = "<group>";
+		};
+		A0DD5BC025EC6AC5004E001C /* SighMon WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5BC125EC6AC5004E001C /* Interface.storyboard */,
+				A0DD5BC425EC6AC6004E001C /* Assets.xcassets */,
+				A0DD5BC625EC6AC6004E001C /* Info.plist */,
+			);
+			path = "SighMon WatchKit App";
+			sourceTree = "<group>";
+		};
+		A0DD5BCF25EC6AC6004E001C /* SighMon WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD5BD025EC6AC6004E001C /* InterfaceController.swift */,
+				A0DD5BD225EC6AC6004E001C /* ExtensionDelegate.swift */,
+				A0DD5BD425EC6AC6004E001C /* NotificationController.swift */,
+				A0DD5BD625EC6AC6004E001C /* ComplicationController.swift */,
+				A0DD5BD825EC6AC7004E001C /* Assets.xcassets */,
+				A0DD5BDA25EC6AC7004E001C /* Info.plist */,
+				A0DD5BDB25EC6AC7004E001C /* PushNotificationPayload.apns */,
+			);
+			path = "SighMon WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0DD5B9125EC6AC3004E001C /* SighMon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD5BE625EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon" */;
+			buildPhases = (
+				A0DD5B8E25EC6AC3004E001C /* Sources */,
+				A0DD5B8F25EC6AC3004E001C /* Frameworks */,
+				A0DD5B9025EC6AC3004E001C /* Resources */,
+				A0DD5BE525EC6AC7004E001C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD5BBF25EC6AC5004E001C /* PBXTargetDependency */,
+			);
+			name = SighMon;
+			productName = SighMon;
+			productReference = A0DD5B9225EC6AC3004E001C /* SighMon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0DD5BA725EC6AC5004E001C /* SighMonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD5BE925EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMonTests" */;
+			buildPhases = (
+				A0DD5BA425EC6AC5004E001C /* Sources */,
+				A0DD5BA525EC6AC5004E001C /* Frameworks */,
+				A0DD5BA625EC6AC5004E001C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD5BAA25EC6AC5004E001C /* PBXTargetDependency */,
+			);
+			name = SighMonTests;
+			productName = SighMonTests;
+			productReference = A0DD5BA825EC6AC5004E001C /* SighMonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0DD5BB225EC6AC5004E001C /* SighMonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD5BEC25EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMonUITests" */;
+			buildPhases = (
+				A0DD5BAF25EC6AC5004E001C /* Sources */,
+				A0DD5BB025EC6AC5004E001C /* Frameworks */,
+				A0DD5BB125EC6AC5004E001C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD5BB525EC6AC5004E001C /* PBXTargetDependency */,
+			);
+			name = SighMonUITests;
+			productName = SighMonUITests;
+			productReference = A0DD5BB325EC6AC5004E001C /* SighMonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A0DD5BBB25EC6AC5004E001C /* SighMon WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD5BE225EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon WatchKit App" */;
+			buildPhases = (
+				A0DD5BBA25EC6AC5004E001C /* Resources */,
+				A0DD5BE125EC6AC7004E001C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD5BCE25EC6AC6004E001C /* PBXTargetDependency */,
+			);
+			name = "SighMon WatchKit App";
+			productName = "SighMon WatchKit App";
+			productReference = A0DD5BBC25EC6AC5004E001C /* SighMon WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A0DD5BCA25EC6AC6004E001C /* SighMon WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD5BDE25EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon WatchKit Extension" */;
+			buildPhases = (
+				A0DD5BC725EC6AC6004E001C /* Sources */,
+				A0DD5BC825EC6AC6004E001C /* Frameworks */,
+				A0DD5BC925EC6AC6004E001C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SighMon WatchKit Extension";
+			productName = "SighMon WatchKit Extension";
+			productReference = A0DD5BCB25EC6AC6004E001C /* SighMon WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0DD5B8A25EC6AC3004E001C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A0DD5B9125EC6AC3004E001C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A0DD5BA725EC6AC5004E001C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A0DD5B9125EC6AC3004E001C;
+					};
+					A0DD5BB225EC6AC5004E001C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A0DD5B9125EC6AC3004E001C;
+					};
+					A0DD5BBB25EC6AC5004E001C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A0DD5BCA25EC6AC6004E001C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A0DD5B8D25EC6AC3004E001C /* Build configuration list for PBXProject "SighMon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0DD5B8925EC6AC3004E001C;
+			productRefGroup = A0DD5B9325EC6AC3004E001C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DD5B9125EC6AC3004E001C /* SighMon */,
+				A0DD5BA725EC6AC5004E001C /* SighMonTests */,
+				A0DD5BB225EC6AC5004E001C /* SighMonUITests */,
+				A0DD5BBB25EC6AC5004E001C /* SighMon WatchKit App */,
+				A0DD5BCA25EC6AC6004E001C /* SighMon WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0DD5B9025EC6AC3004E001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BA225EC6AC5004E001C /* LaunchScreen.storyboard in Resources */,
+				A0DD5B9F25EC6AC5004E001C /* Assets.xcassets in Resources */,
+				A0DD5B9D25EC6AC3004E001C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BA625EC6AC5004E001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BB125EC6AC5004E001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BBA25EC6AC5004E001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BC525EC6AC6004E001C /* Assets.xcassets in Resources */,
+				A0DD5BC325EC6AC5004E001C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BC925EC6AC6004E001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BD925EC6AC7004E001C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0DD5B8E25EC6AC3004E001C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5B9A25EC6AC3004E001C /* ViewController.swift in Sources */,
+				A0DD5B9625EC6AC3004E001C /* AppDelegate.swift in Sources */,
+				A0DD5B9825EC6AC3004E001C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BA425EC6AC5004E001C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BAD25EC6AC5004E001C /* SighMonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BAF25EC6AC5004E001C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BB825EC6AC5004E001C /* SighMonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD5BC725EC6AC6004E001C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DD5BD525EC6AC6004E001C /* NotificationController.swift in Sources */,
+				A0DD5BD725EC6AC6004E001C /* ComplicationController.swift in Sources */,
+				A0DD5BD325EC6AC6004E001C /* ExtensionDelegate.swift in Sources */,
+				A0DD5BD125EC6AC6004E001C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0DD5BAA25EC6AC5004E001C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD5B9125EC6AC3004E001C /* SighMon */;
+			targetProxy = A0DD5BA925EC6AC5004E001C /* PBXContainerItemProxy */;
+		};
+		A0DD5BB525EC6AC5004E001C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD5B9125EC6AC3004E001C /* SighMon */;
+			targetProxy = A0DD5BB425EC6AC5004E001C /* PBXContainerItemProxy */;
+		};
+		A0DD5BBF25EC6AC5004E001C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD5BBB25EC6AC5004E001C /* SighMon WatchKit App */;
+			targetProxy = A0DD5BBE25EC6AC5004E001C /* PBXContainerItemProxy */;
+		};
+		A0DD5BCE25EC6AC6004E001C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD5BCA25EC6AC6004E001C /* SighMon WatchKit Extension */;
+			targetProxy = A0DD5BCD25EC6AC6004E001C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0DD5B9B25EC6AC3004E001C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0DD5B9C25EC6AC3004E001C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0DD5BA025EC6AC5004E001C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0DD5BA125EC6AC5004E001C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A0DD5BC125EC6AC5004E001C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0DD5BC225EC6AC5004E001C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0DD5BDC25EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0DD5BDD25EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A0DD5BDF25EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = "SighMon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		A0DD5BE025EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = "SighMon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		A0DD5BE325EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				IBSC_MODULE = SighMon_WatchKit_Extension;
+				INFOPLIST_FILE = "SighMon WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		A0DD5BE425EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				IBSC_MODULE = SighMon_WatchKit_Extension;
+				INFOPLIST_FILE = "SighMon WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		A0DD5BE725EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0DD5BE825EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0DD5BEA25EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SighMon.app/SighMon";
+			};
+			name = Debug;
+		};
+		A0DD5BEB25EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SighMon.app/SighMon";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0DD5BED25EC6AC7004E001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SighMon;
+			};
+			name = Debug;
+		};
+		A0DD5BEE25EC6AC7004E001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD43B52RLX;
+				INFOPLIST_FILE = SighMonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CLC.SighMonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SighMon;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0DD5B8D25EC6AC3004E001C /* Build configuration list for PBXProject "SighMon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BDC25EC6AC7004E001C /* Debug */,
+				A0DD5BDD25EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD5BDE25EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BDF25EC6AC7004E001C /* Debug */,
+				A0DD5BE025EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD5BE225EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BE325EC6AC7004E001C /* Debug */,
+				A0DD5BE425EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD5BE625EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BE725EC6AC7004E001C /* Debug */,
+				A0DD5BE825EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD5BE925EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BEA25EC6AC7004E001C /* Debug */,
+				A0DD5BEB25EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD5BEC25EC6AC7004E001C /* Build configuration list for PBXNativeTarget "SighMonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD5BED25EC6AC7004E001C /* Debug */,
+				A0DD5BEE25EC6AC7004E001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0DD5B8A25EC6AC3004E001C /* Project object */;
+}
